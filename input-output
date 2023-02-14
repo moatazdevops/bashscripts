@@ -1,0 +1,10 @@
+#!/bin/bash
+# input uutput script
+
+#please note that the word after read is a variable, and you can use it by calling this variable.
+
+echo what is your name?
+read name
+#in this case name is a variable
+echo your name is $name 
+

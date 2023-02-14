@@ -1,0 +1,21 @@
+#!/bin/bash
+
+p=pwd
+l=ls
+wi=whoami
+d=date
+echo variable results when we call the variable direct without \echo  are:
+
+$p
+$l
+$wi
+$d
+
+echo
+echo **********************************************
+echo results when we \echo the variable are:
+echo $p
+echo $l
+echo $wi
+echo $d
+

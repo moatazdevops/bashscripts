@@ -1,0 +1,10 @@
+#!/bin/bash
+# If statement example
+number=10
+if
+	[ $number -eq 10 ]
+then 
+	echo number equals 10
+else
+	 echo number is not 10
+fi
