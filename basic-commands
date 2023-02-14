@@ -1,0 +1,14 @@
+#!/bin/bash
+# basic commands
+# Date: 14-feb-2023
+#v1
+# top command to get processes status & head to be able to obtain terminal
+top | head -10
+echo
+#below command to check disk space
+df -h
+echo
+# free -m to obtain info about the free space of memory
+free -m
+echo
+uptime
