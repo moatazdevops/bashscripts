@@ -1,0 +1,11 @@
+#!/bin/bash
+# script to take input from user, and compare it
+echo enter your age
+read age
+if [ $age -le 15 ]
+then echo you are a kid
+elif [ $age -gt 15 ] && [ $age -le 45 ]
+then echo you are a youth  
+else
+echo you are old
+fi
