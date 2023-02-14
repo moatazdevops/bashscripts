@@ -1,0 +1,7 @@
+#!/bin/bash
+# script to check if a specific file is existing
+
+if [ -e /etc/passwd ]
+then echo users file is exist
+else users file is lost
+fi
