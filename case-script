@@ -1,0 +1,16 @@
+#!/bin/bash
+# script for case statement
+echo please select one of below cases:
+echo
+echo 'a = display date and time'
+echo 'b = list files, and directories'
+echo 'c = display logged users, and thier processes'
+echo 'd = check system uptime'
+echo
+read choice
+case $choice in
+a) date;;
+b) ls -lra;;
+c) w;;
+d) uptime;;
+esac
