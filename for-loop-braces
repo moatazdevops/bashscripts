@@ -1,0 +1,8 @@
+#!/bin/bash
+#please note that we use curly braces {} in case of for 
+#please note that we do not put spaces in curly braces
+for i in {1..5}
+do
+echo $i
+done
+

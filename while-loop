@@ -1,0 +1,13 @@
+#!/bin/bash
+i=0
+num=10
+while [ $i -lt $num ]
+do
+echo hello $i times
+sleep 1
+# we need to increase the counter to avoid infinite loop
+# to increase the counter you need to write formula
+# linux will not understand the formula except you write it in expression   
+i=`expr $i + 1`
+done
+echo counting is stopped !!!
