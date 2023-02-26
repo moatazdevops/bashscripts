@@ -1,0 +1,11 @@
+#!/bin/bash
+#this script to check multiple hosts connctivity
+hosts="/gitwt/bashscripts/hosts"
+for ip in $(cat hosts)
+do
+ping -c1 $ip &> /dev/null
+if [ $? -eq 0 ]
+then echo $ip is ok
+else echo $ip is not ok
+fi
+done

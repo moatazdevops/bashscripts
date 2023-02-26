@@ -1,0 +1,8 @@
+#!/bin/bash
+echo please enter host IP in this format aaa.bbb.ccc
+read host
+ping -c1 $host &> /dev/null
+if [ $? -eq 0 ]
+then echo the host $host  is reachable
+else echo the host $host is not reachable
+fi

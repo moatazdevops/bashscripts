@@ -1,0 +1,8 @@
+#!/bin/bash
+# c1 means count 1 "only one ping"
+# &> to redirect the output to null drive "to throw down the output as"  as we do not want to see the output. 
+ping -c1 192.168.14.128 &> /dev/null
+if [ $? -eq 0  ]
+then echo host is reachable
+else echo host is not reachable
+fi
