@@ -1,0 +1,2 @@
+[    2.350718] kernel: RAS: Correctable Errors collector initialized.
+[    4.074102] kernel: EXT4-fs (sda3): re-mounted. Opts: errors=remount-ro. Quota mode: none.

@@ -1,0 +1,5 @@
+#!/bin/bash
+cp /var/log/dmesg /gitwt/bashscripts
+chown moataz /gitwt/bashscripts
+chgrp moataz /gitwt/bashscripts
+grep -i error /gitwt/bashscripts/dmesg > /gitwt/bashscripts/output-error
