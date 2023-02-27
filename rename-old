@@ -1,0 +1,4 @@
+#!/bin/bash
+#script to find files created from more than 90 days, and rename them to .old
+find /gitwt/bashscripts -mtime +90 -exec mv {} {}.old \;
+

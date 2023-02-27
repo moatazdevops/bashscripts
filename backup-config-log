@@ -1,0 +1,6 @@
+#!/bin/bash
+# archive /etc /var
+tar -cvf /tmp/backup.tar /etc /var
+#compress the tar file using gzip
+gzip /tmp/backup.tar
+

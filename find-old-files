@@ -1,0 +1,8 @@
+#!/bin/bash
+# this script to find files created from more than 90 days "+90"
+#find <place> -mtime <+ or - period>
+# we use also -exec to run command on the output  attribute -exec <command>
+# -exec needs placeholder we use {} to use the output of find command
+# after finishing exec command we end with delimiter \ then ;
+find /gitwt/bashscripts/ -mtime +90 -exec ls -l {} \;
+
