@@ -1,0 +1,12 @@
+#!/bin/bash
+#this script to create number of files based on user specified number
+echo please enter number of files
+read i
+echo please enter the file generic name
+read n
+#seq will start from 1 to the seq
+#we put the seq between ticks
+for b in `seq $i`
+do
+touch $n.$b
+done

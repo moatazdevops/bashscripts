@@ -1,0 +1,7 @@
+#!/bin/bash
+for i in moataz.*
+do
+echo assign write permission to $i
+chmod u+w $i
+sleep 1
+done
