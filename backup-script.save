@@ -1,0 +1,4 @@
+#!/bin/bash
+file=
+tar -cvf backup-$date.tar /etc /var
+gzip
