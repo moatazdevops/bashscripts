@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in moataz*
+do
+mv $i ${i%.txt}.none
+done

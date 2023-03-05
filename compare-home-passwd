@@ -1,0 +1,12 @@
+#!/bin/bash
+#this script to compare if directory in /home does not in /etc/passwd
+folders=`ls /home`
+for i in $folders
+do
+chck=`grep -c /home/$i /etc/passwd`
+if [ $chck -ge 1 ]
+then echo $i is found in passwd file
+else echo $i is not found in passwd file
+fi
+done
+
