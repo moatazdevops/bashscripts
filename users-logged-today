@@ -1,0 +1,5 @@
+#!/bin/bash
+#this script to grep users logged today
+#command "last" inform us about the history of logged users with date
+today=`date | awk '{print $1,$2}'`
+last | grep "$today" | awk '{print $1}'
