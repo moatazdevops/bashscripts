@@ -1,0 +1,11 @@
+#!/bin/bash
+#we use lastlogin command to lis all users with last login date
+# lastlogin -b 90 to display users never log from 90 day
+#tail -n+2 to dispaly all output except first line
+#a=`lastlog | tail -n+2 | grep test | awk '{print $1}'`
+lastlog | tail -n+2 | grep test | awk '{print $1}' >  /tmp/disable-users
+a=`cat /tmp/disable-users`
+for i in $a 
+do
+usermod -L $i
+done  

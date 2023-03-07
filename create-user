@@ -1,0 +1,27 @@
+#!/bin/bash
+#this script to create user
+echo "please enter the username:"
+read u
+grep -q $u /etc/passwd
+if [ $? -eq 0 ]
+then echo "this user is already existing please select another user"
+exit 0
+fi
+
+echo "please provide a user description"
+read d
+
+echo "do you want to specify ID?"
+echo "if yes write y, or write n"
+read yon
+if [ $yon == y ]
+then echo please enter the user ID
+read uid
+useradd $u -c "$d" -u $uid
+echo $u has been created
+elif [ $yon == n ]
+then echo "no worries, we are going to create it for you!"
+useradd $u -c "$d"
+echo user $u has been created
+else exit 0
+fi 

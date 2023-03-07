@@ -1,0 +1,5 @@
+#!/bin/bash
+#we can use xargs to deal with satandard input resulted frm another command
+# in our case we can use xargs instead of loop the output one by one
+lastlog | tail -n+2 | grep user | awk '{print $1}' | xargs -I {} usermod -L {}
+
